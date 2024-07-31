@@ -61,3 +61,19 @@ bannerContent.innerHTML = repeatedMessage + repeatedMessage;
 CSS.paintWorklet.addModule(
   'https://unpkg.com/parallelowow@0.1.5/parallelowow.js'
 );
+
+let lastScrollTop = 0;
+let throttleTimeout = null;
+
+window.addEventListener('scroll', () => {
+  if (!throttleTimeout) {
+    throttleTimeout = setTimeout(() => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (Math.abs(scrollTop - lastScrollTop) > 100) {
+        lastScrollTop = scrollTop;
+        // Call a function to update the background or other actions
+      }
+      throttleTimeout = null;
+    }, 200); // Adjust the delay as needed
+  }
+});

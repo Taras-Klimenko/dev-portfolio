@@ -312,18 +312,18 @@ nav.active {
   object-fit: cover;
 }
 
-.project-slide, .project-slide-2 {
+.project-slide,
+.project-slide-2 {
   position: absolute;
   object-fit: cover;
   opacity: 0;
   transition: opacity 2s;
-
 }
 
-.project-slide.active, .project-slide-2.active {
+.project-slide.active,
+.project-slide-2.active {
   opacity: 1;
 }
-
 
 .project-description {
   width: 40%;
@@ -335,14 +335,19 @@ nav.active {
 }
 
 .project-description p {
- line-height: 1.5;
+  line-height: 1.5;
 }
 
 .project-description ul {
   line-height: 2;
 }
 
-.tech-stack-1, .tech-stack-2, .tech-stack-3, .tech-stack-4, .tech-stack-5, .tech-stack-6 {
+.tech-stack-1,
+.tech-stack-2,
+.tech-stack-3,
+.tech-stack-4,
+.tech-stack-5,
+.tech-stack-6 {
   padding: 6px 12px;
   margin: 6px;
   border-radius: 5px;
@@ -353,15 +358,15 @@ nav.active {
 }
 
 .tech-stack-1 {
-background-color: #2a9d8f;
+  background-color: #2a9d8f;
 }
 
 .tech-stack-2 {
-  background-color:#e76f51;
+  background-color: #e76f51;
 }
 
 .tech-stack-3 {
-  background-color:#e9c46a;
+  background-color: #e9c46a;
   color: black;
 }
 
@@ -370,11 +375,11 @@ background-color: #2a9d8f;
 }
 
 .tech-stack-5 {
-  background-color:#264653
+  background-color: #264653;
 }
 
 .tech-stack-6 {
-  background-color:#f4a261;
+  background-color: #f4a261;
   color: black;
 }
 
@@ -581,7 +586,8 @@ footer {
     margin: 0;
   }
 
-  .project-slideshow, .project-description {
+  .project-slideshow,
+  .project-description {
     width: 95%;
   }
 
@@ -633,7 +639,6 @@ footer {
 
 /* Smartphone Horizontal */
 @media screen and (orientation: landscape) and (max-height: 450px) {
-
   .banner {
     bottom: 80px;
   }
@@ -662,7 +667,6 @@ footer {
     padding: 40px;
   }
 }
-
 
 /* Smartphone Vertical */
 @media screen and (max-width: 600px) {
