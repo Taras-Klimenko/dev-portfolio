@@ -11,14 +11,14 @@ body {
   margin: 0;
   padding: 0;
   height: auto;
-  min-height: 100dvh;
+  min-height: 100vh;
   overflow-x: hidden;
   background-color: rgb(22, 22, 22);
   font-family: 'Barlow', sans-serif;
 }
 
 section {
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 .section-title h2 {
@@ -118,7 +118,7 @@ nav.active {
 
 .slideshow {
   width: 100vw;
-  height: 100dvh;
+  height: 100vh;
   overflow: hidden;
   position: relative;
 }
@@ -439,7 +439,7 @@ nav.active {
 .contact-container {
   display: grid;
   place-items: center;
-  height: 100dvh;
+  height: 100vh;
   position: relative;
   background-image: linear-gradient(
     to bottom,
