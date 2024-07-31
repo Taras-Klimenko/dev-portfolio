@@ -74,6 +74,6 @@ window.addEventListener('scroll', () => {
         // Call a function to update the background or other actions
       }
       throttleTimeout = null;
-    }, 200); // Adjust the delay as needed
+    }, 1000); // Adjust the delay as needed
   }
 });
