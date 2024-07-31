@@ -475,9 +475,9 @@ nav.active {
   font-size: 1rem;
   transition: font-size 0.3s ease-in-out;
 
-  &:hover {
+  /* &:hover {
     font-size: 1.05rem;
-  }
+  } */
 }
 
 @keyframes scrollBanner {

@@ -50,12 +50,12 @@ setInterval(switchProjectImage2, 5000);
 
 // Banner
 
-const bannerContent = document.getElementById('bannerContent');
-let messageHTML =
-  '<span class="contact-message">Contact me at tarasklimenko.1989@gmail.com &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; Let\'s work together! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - </span>';
-let repeatedMessage = messageHTML.repeat(10);
-// Setting repeated message as a content
-bannerContent.innerHTML = repeatedMessage + repeatedMessage;
+// const bannerContent = document.getElementById('bannerContent');
+// let messageHTML =
+//   '<span class="contact-message">Contact me at tarasklimenko.1989@gmail.com &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; Let\'s work together! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - </span>';
+// let repeatedMessage = messageHTML.repeat(10);
+// // Setting repeated message as a content
+// bannerContent.innerHTML = repeatedMessage + repeatedMessage;
 
 // Houdini ParalleloWow Background
 CSS.paintWorklet
