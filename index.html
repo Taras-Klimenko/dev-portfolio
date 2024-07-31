@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An amazing developer portfolio" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="scrollbar.css" />
+    <title>Developer Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="nav-wrapper">
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#home" onclick="hideMenu()">Home</a></li>
+          <li><a href="#about" onclick="hideMenu()">About</a></li>
+          <li><a href="#projects" onclick="hideMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="hideMenu()">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-container">
+      <!-- Home Section -->
+      <section id="home">
+        <div class="slideshow">
+          <img
+            src="./img/slideshow/cyberpunk1.jpg"
+            alt="Cyberpunk Slideshow Element"
+            class="slide active"
+          />
+          <img
+            src="./img/slideshow/cyberpunk2.jpg"
+            alt="Cyberpunk Slideshow Element"
+            class="slide"
+            loading="lazy"
+          />
+          <img
+            src="./img/slideshow/cyberpunk3.jpg"
+            alt="Cyberpunk Slideshow Element"
+            class="slide"
+            loading="lazy"
+          />
+          <img
+            src="./img/slideshow/cyberpunk4.jpg"
+            alt="Cyberpunk Slideshow Element"
+            class="slide"
+            loading="lazy"
+          />
+          <img
+            src="./img/slideshow/cyberpunk5.jpg"
+            alt="Cyberpunk Slideshow Element"
+            class="slide"
+            loading="lazy"
+          />
+        </div>
+        <div class="page-title">
+          <h1>Web Development</h1>
+          <h1>of the Future</h1>
+        </div>
+        <div class="mouse"></div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <div class="about-container">
+          <div class="section-title">
+            <h2>About</h2>
+          </div>
+          <div class="about-grid">
+            <div class="box1">
+              <div class="text-box">
+                <h3>Hello there!</h3>
+                <p>
+                  My name is Taras Klimenko and I am a passionate frontend web
+                  developer with a love for turning creative ideas into engaging
+                  and functional web experiences. I thrive on the challenges
+                  this field presents and enjoy the satisfaction of seeing the
+                  different components of an application come together
+                  seamlessly. My skills, along with my enthusiasm for web
+                  development, drive me to continuously learn and grow. I look
+                  forward to contributing to innovative projects and bringing my
+                  unique perspective to the world of web development.
+                </p>
+              </div>
+            </div>
+            <div class="icon-box box2">
+              <i class="fa-solid fa-code"></i>
+              <h3>Quality Code</h3>
+              <p>
+                Striving to write clean, readable, and maintainable code that
+                can scale easily.
+              </p>
+            </div>
+            <div class="icon-box box3">
+              <i class="fa-solid fa-book-open-reader"></i>
+              <h3>Constant Growth</h3>
+              <p>
+                Continuous learning, embracing new approaches, and adopting best
+                practices.
+              </p>
+            </div>
+            <div class="icon-box box4">
+              <i class="fa-solid fa-handshake-simple"></i>
+              <h3>Teamwork</h3>
+              <p>
+                Always open for communication, ready to learn from and share
+                with colleagues.
+              </p>
+            </div>
+            <div class="icon-box box5">
+              <i class="fa-solid fa-infinity"></i>
+              <h3>Infinite Ideas</h3>
+              <p>
+                Creating accessible, captivating, and engaging web experiences
+                for users.
+              </p>
+            </div>
+            <div class="box6">
+              <div class="text-box">
+                <h3>Journey of Learning</h3>
+                <p>
+                  My journey as a frontend developer has been a thrilling
+                  adventure of exploration and growth. From mastering the
+                  fundamentals to tackling complex projects, I've embraced every
+                  opportunity to expand my skills and knowledge. Looking
+                  forward, I am excited to take on new challenges, collaborate
+                  with diverse teams, and contribute to creating innovative web
+                  solutions that make a difference.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <div class="projects-container">
+          <div class="section-title">
+            <h2>Projects</h2>
+          </div>
+          <div class="project-items-container">
+            <div class="project-item-container">
+              <div class="project-slideshow">
+                <img
+                  src="./img/compressed-images/medley-laptop-mockup.png"
+                  alt="Medley Laptop Mockup"
+                  class="project-slide active"
+                />
+                <img
+                  src="./img/compressed-images/medley-tablet-mockup.png"
+                  alt="Medley Tablet Mockup"
+                  class="project-slide"
+                />
+                <img
+                  src="./img/compressed-images/medley-smartphone-mockup.png"
+                  alt="Medley Smartphone Mockup"
+                  class="project-slide"
+                />
+              </div>
+              <div class="project-description">
+                <h3>Medley Apparel</h3>
+                <p>
+                  A feature-packed React App - an e-commerce project. Features
+                  include:
+                </p>
+                <ul>
+                  <li>Light / dark theme switch</li>
+                  <li>Responsive design for best experience on all devices</li>
+                  <li>
+                    User registration and authentication via email or Google
+                    account
+                  </li>
+                  <li>Fully functional shopping cart</li>
+                  <li>Checkout page with working payment system</li>
+                </ul>
+                <p>
+                  Tech Stack: <span class="tech-stack-1 shiny">React</span
+                  ><span class="tech-stack-2 shiny">Redux</span
+                  ><span class="tech-stack-3 shiny">TypeScript</span
+                  ><span class="tech-stack-4 shiny">SCSS</span
+                  ><span class="tech-stack-5 shiny">PostgreSQL</span
+                  ><span class="tech-stack-6 shiny">Stripe</span>
+                </p>
+                <div class="link-container">
+                  <span>View Project: </span>
+                  <a
+                    href="https://github.com/Taras-Klimenko/medley-apparel"
+                    class="github-link"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                  <a
+                    href="https://medley-apparel.netlify.app/"
+                    class="live-link"
+                    target="_blank"
+                    >Live Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-item-container">
+              <div class="project-description">
+                <h3>E-Note Taking System</h3>
+                <p>
+                  An app designed for taking notes, inspired by Notion. Features
+                  include:
+                </p>
+                <ul>
+                  <li>
+                    User authorization via one-time password sent to email
+                  </li>
+                  <li>Retrieve, create, edit and delete user notes</li>
+                  <li>Autosave changes to the database</li>
+                  <li>
+                    Supported note types include text, images, new pages, and
+                    headers
+                  </li>
+                  <li>Reorder page structure by drag-and-drop</li>
+                </ul>
+                <p>
+                  Tech Stack: <span class="tech-stack-1 shiny">React</span
+                  ><span class="tech-stack-3 shiny">TypeScript</span
+                  ><span class="tech-stack-4 shiny">CSS3</span
+                  ><span class="tech-stack-5 shiny">PostgreSQL</span
+                  ><span class="tech-stack-6 shiny">HTML5</span>
+                </p>
+                <div class="link-container">
+                  <span>View Project: </span>
+                  <a
+                    href="https://github.com/Taras-Klimenko/e-note-taking-system"
+                    class="github-link"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                  <a
+                    href="https://moonlit-conkies-e288a8.netlify.app/"
+                    class="live-link"
+                    target="_blank"
+                    >Live Project</a
+                  >
+                </div>
+              </div>
+              <div class="project-slideshow">
+                <img
+                  src="./img/compressed-images/enote-laptop-mockup.png"
+                  alt="Enote Laptop Mockup"
+                  class="project-slide-2 active"
+                />
+                <img
+                  src="./img/compressed-images/enote-tablet-mockup.png"
+                  alt="Enote Tablet Mockup"
+                  class="project-slide-2"
+                />
+                <img
+                  src="./img/compressed-images/enote-smartphone-mockup.png"
+                  alt="Enote Smartphone Mockup"
+                  class="project-slide-2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="contact-container">
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
+          <!-- Banner -->
+          <a href="mailto:tarasklimenko.1989@gmail.com" class="banner-link">
+            <div class="banner">
+              <div class="banner-content" id="bannerContent"></div>
+            </div>
+          </a>
+        </div>
+        <!-- Footer -->
+        <footer>
+          <!-- Social Media -->
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com/taras.klimenko.16" target="_blank"
+              ><i class="fa-brands fa-facebook" title="Facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/evermourn/" target="_blank"
+              ><i class="fa-brands fa-instagram" title="Instagram"></i
+            ></a>
+            <a href="https://x.com/taras_klimenko_" target="_blank"
+              ><i class="fa-brands fa-x-twitter" title="X / Twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/taras-klimenko/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin" title="LinkedIn"></i
+            ></a>
+            <a href="https://github.com/Taras-Klimenko" target="_blank"
+              ><i class="fa-brands fa-github" title="Github"></i
+            ></a>
+          </div>
+          <!-- Footer Text -->
+          <div class="footer-text">
+            &copy; 2024 TK Web Development. All rights reserved.
+          </div>
+        </footer>
+      </section>
+    </main>
+    <!-- SCRIPT AREA -->
+    <script
+      src="https://kit.fontawesome.com/ed0f77c0e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
