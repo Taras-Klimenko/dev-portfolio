@@ -427,12 +427,6 @@ nav.active {
 /* Contact Section */
 
 #contact {
-  --parallelowow-tile-width: 60;
-  --parallelowow-base-color: #ff5566;
-  --parallelowow-color-step: 0;
-  --parallelowow-probability: 0.25;
-  --parallelowow-stroke-weight: 0.5;
-  background: paint(parallelowow), var(--parallelowow-base-color);
   color: white;
 }
 
@@ -443,8 +437,9 @@ nav.active {
   position: relative;
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.7)
+    rgba(22, 22, 22, 1),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 1)
   );
 }
 
