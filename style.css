@@ -335,10 +335,49 @@ nav.active {
 .project-description {
   width: 40%;
   color: white;
+  background: rgb(30, 30, 30);
+  padding: 10px 20px;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
+  border-radius: 5px;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.project-description::after, .project-description::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  padding: 2px;
+  border-radius: 5px;
+  animation: 5s rotate-gradient linear infinite;
+}
+
+@keyframes rotate-gradient {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.project-description::before {
+  filter: blur(0.7rem);
+  opacity: 0.8;
 }
 
 .project-description p {
@@ -700,5 +739,9 @@ footer {
   .text-box {
     width: 90vw;
     padding: 40px;
+  }
+
+  .project-description {
+    width: 90%;
   }
 }
